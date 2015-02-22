@@ -1,0 +1,391 @@
+@font-face {
+    font-family: DINRegularAlternate;
+    src: url("../fonts/DIN RegularAlternate.ttf");
+}
+
+@font-face {
+    font-family: DINCondensedBold;
+    src: url("../fonts/DIN Condensed Bold.ttf");
+}
+
+.regular {
+    font-family: DINRegularAlternate;
+}
+
+.condensed {
+    font-family: DINCondensedBold;
+}
+
+.titleFont{
+    color: #fff;
+    font-size: 3.875rem;
+    font-family: DINCondensedBold;
+    text-align: center;
+}
+
+.descriptionFont{
+    color: #fff;
+    font-size: 1.125rem;
+    font-family: DINRegularAlternate;
+    text-align: center;
+}
+
+.redFont{
+    color: rgb(235, 49, 78);
+}
+
+body{
+    background: url("../images/back.jpg") no-repeat, url("../images/back2.jpg") repeat;
+    background-size: 1280px;
+}
+
+.nav li a {
+    color: #fff;
+    text-align: center;
+}
+
+.nav li.active a { 
+    color: rgb(235, 49, 78);
+}
+
+.nav li a:hover {
+    background: none;
+
+}
+
+#titleBlock{
+    margin-top: 21%;
+}
+
+#descriptionBlock{
+    margin-top: 25%;
+}
+
+#separatorBlock{
+    margin-top: 5%;
+}
+
+#separatorLine{
+    border: 1px solid rgb(235, 49, 78);
+    top: 4px;
+}
+
+#diamond1{
+    left: 1px;
+}
+
+#diamond2{
+    right: 1px;
+}
+
+#BreakIcon{
+    padding: 0% 15%;
+}
+
+#BreakIcon > img{
+    width: 50px;
+}
+
+.detailsTitle {  
+    margin-top: 5%;
+    font-family: DINCondensedBold;
+    font-size: 2.375rem;
+    color: rgb(235, 49, 78);
+}
+
+.detailsHeader {
+    text-transform: uppercase;
+    margin-top: 5%;
+    font-family: DINCondensedBold;
+    font-size: 1.750rem;
+    color: #fff;
+}
+
+.infographycText {
+    text-transform: uppercase;
+    margin-top: 75px;
+    font-family: DINCondensedBold;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+.detailsDescription {
+    font-family: DINRegularAlternate;
+    font-size: 1.125rem;
+    color: #b9b2b3;
+}
+
+.diamond { 
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom-color: rgb(235, 49, 78);
+    position: relative;
+    top: -5px;
+}
+
+.diamond:after { 
+    content: ''; 
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent; 
+    border-top-color: rgb(235, 49, 78);
+}
+
+#footer{
+    height: 200px;
+    background-color: rgb(235, 49, 78);
+}
+
+.levelBar{
+
+    width: 100%;
+}
+
+.levelBarContainer{
+    margin-right: 10%;
+    width: 15%;
+}
+
+.bar{
+    margin-top: 3px;
+    border: 1px solid #fff;
+}
+
+.graphLabel1{
+    margin-left: 5%;
+}
+.graphLabel2{
+    margin-left: 20%;
+}
+
+#SkillsBar, #DetailsSecondLine{
+    margin-top: 10%;
+}
+
+#ps {
+    height: 185px;
+}
+
+#ai {
+    height: 135px;
+    margin-top: 50px;
+}
+
+#id {
+    height: 70px;
+    margin-top: 115px;
+}
+
+#fl {
+    height: 160;
+    margin-top: 25px;
+}
+
+#circleOut{
+    background-color: transparent;
+    border-right: 5px solid rgba(0, 183, 229, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-image: none;
+    border-radius: 115px;
+    width: 230px;
+    height: 230px;
+    margin: 0px auto;
+    position: relative;
+    animation: 5s linear 0s normal none infinite running spin;
+}
+
+#circleIn{
+    top: -225px;
+    background-color: transparent;
+    border-right: 5px solid rgba(0, 183, 229, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff transparent #fff transparent;
+    border-image: none;
+    border-radius: 110px;
+    width: 220px;
+    height: 220px;
+    margin: 0px auto;
+    position: relative;
+    animation: 10s linear 0s normal none infinite running spinoff;
+}
+
+#circleRed{
+    background-size: 210px;
+    left: 43px;
+    top: -440px;
+    position: relative;
+    width: 210px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-image: url(../images/infographic_red.png);
+    animation: 15s linear 0s normal none infinite running spin;
+}
+
+#InfographySection{
+    margin-top: 10%;
+}
+
+#TeamPlayer, 
+#PixelPerfection, 
+#HighlyMotivated, 
+#FastLearner{
+    margin-left: 75px;
+    margin-bottom: 5px;
+    Width: 50px;
+}
+
+.footerTitle{
+    font-family: DINCondensedBold;
+    font-size: 2.375rem;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.footerForm{
+    font-family: DINCondensedBold;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+}
+
+.footerForm input,
+.footerForm #messageField{
+    background-color: transparent;
+    border: 0px solid;
+    width: 140px;
+    color: #CCC;
+    margin-left: 5px;
+    resize: none;
+}
+
+.footerForm label{
+    height: 15px;
+}
+
+.FieldSection{
+    border-bottom: 1px solid #000;
+    margin: 10px 0px;
+}
+
+#MessagePanel{
+    height: 88px;
+}
+
+#SeparatorFooter{
+    border-left: 1px solid #000;    
+    height: 80px;
+    float: left;
+    position: relative;
+    top: 15px;
+}
+
+#SeparatorFooter .diamond { 
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #000;
+    position: relative;
+    top: -5px;
+}
+
+#SeparatorFooter .diamond:after { 
+    content: ''; 
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent; 
+    border-top-color: #000;
+}
+
+#SeparatorFooter #diamond3 { 
+    top: -10px;
+    left: -5px;
+}
+
+#SeparatorFooter #diamond4 { 
+    top: 62px;
+    left: -5px; 
+}
+
+.SocialIcon{
+    height: 50px;
+    width: 50px;
+}
+
+#Be
+{
+    background-image: url("../images/be.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Fb{
+    background-image: url("../images/fb.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Li{
+    background-image: url("../images/li.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.social{
+    margin-top: 15px;
+}
+
+.socialEmail{
+    margin-top: 10px;
+    font-family: DINRegularAlternate;
+    text-transform: lowercase;
+    font-size: 1.125rem;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    };
+}
