@@ -1,16 +1,52 @@
-//// assuming there's a loaded image and a canvas element in the DOM.
-//var my_image = document.getElementById('');
-//var my_canvas = document.getElementById('my-canvas');
-//var ctx = my_canvas.getContext('2d');
-//
-//// draw the image on the canvas
-//ctx.drawImage(my_image, my_image);
-//
-//var my_image_data = ctx.getImageData( 0, 0, my_canvas.clientWidth, my_canvas.clientHeight );
-//var parameters = { amount: 10, seed: 45, iterations: 30, quality: 30 };
-//
-//function drawGlitchedImageData(image_data) {
-//    ctx.putImageData(image_data, 0, 0);
-//}
-//
-//glitch(my_image_data, parameters, drawGlitchedImageData);
+$(document).ready(function(){
+
+    var canvas = document.getElementById('canvas');
+    console.log(canvas);
+    var context = canvas.getContext('2d')
+      , img = new Image()
+      , w
+      , h
+      , offset
+      , glitchInterval;
+
+    //img.src = 'http://blog.codepen.io/wp-content/uploads/2012/06/White-Large.png';
+    img.src = 'js/back.jpg';
+    img.onload = function() {
+      init();
+        window.onresize = init;
+    };
+    console.log(img);
+
+    var init = function() {
+        clearInterval(glitchInterval);
+        canvas.width = w = window.innerWidth;
+        offset = w * .1;
+        canvas.height = h = ~~(824 * ((w - (offset * 2)) / img.width)); ;
+        glitchInterval = setInterval(function() {
+            clear();
+            context.drawImage(img, 0, 0, img.width, 824, 0, 0, w, h);
+            setTimeout(glitchImg, randInt(250, 1000));
+        }, 500);
+    };
+
+    var clear = function() {
+        context.rect(0, 0, w, h);
+        context.fill();
+    };
+
+    var glitchImg = function() {
+        for (var i = 0; i < randInt(1, 13); i++) {
+            var x = Math.random() * w;
+            var y = Math.random() * h;
+            var spliceWidth = w - x;
+            var spliceHeight = randInt(5, h / 3);
+            context.drawImage(canvas, 0, y, spliceWidth, spliceHeight, x, y, spliceWidth, spliceHeight);
+            context.drawImage(canvas, spliceWidth, y, x, spliceHeight, 0, y, x, spliceHeight);
+        }
+    };
+
+    var randInt = function(a, b) {
+        return ~~(Math.random() * (b - a) + a);
+    };
+
+});

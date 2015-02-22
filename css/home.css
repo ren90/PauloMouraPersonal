@@ -1,7 +1,3 @@
-html{
-    font-size: 14px;
-}
-
 @font-face {
     font-family: DINRegularAlternate;
     src: url("../fonts/DIN RegularAlternate.ttf");
@@ -18,7 +14,13 @@ html {
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
 }
-    
+  
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .regular {
     font-family: DINRegularAlternate;
 }
@@ -46,7 +48,7 @@ html {
 }
 
 body{
-    background: url("../images/back.jpg") no-repeat, url("../images/back2.jpg") repeat;
+    background: url("../images/back2.jpg") repeat;
     background-size: 1280px;
     background-position: center top;
 }
