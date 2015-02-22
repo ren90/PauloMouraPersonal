@@ -8,6 +8,13 @@
     src: url("../fonts/DIN Condensed Bold.ttf");
 }
 
+
+html { 
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+    
 .regular {
     font-family: DINRegularAlternate;
 }
@@ -37,6 +44,7 @@
 body{
     background: url("../images/back.jpg") no-repeat, url("../images/back2.jpg") repeat;
     background-size: 1280px;
+    background-position: center top;
 }
 
 .nav li a {
@@ -84,6 +92,7 @@ body{
 
 #BreakIcon > img{
     width: 50px;
+    padding-top: 20px;
 }
 
 .detailsTitle {  
@@ -246,6 +255,7 @@ body{
     font-size: 2.375rem;
     text-transform: uppercase;
     margin-top: 5%;
+    color:#000;
 }
 
 .footerForm{
@@ -271,6 +281,7 @@ body{
 .FieldSection{
     border-bottom: 1px solid #000;
     margin: 10px 0px;
+    color: #000;
 }
 
 #MessagePanel{
