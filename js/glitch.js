@@ -21,7 +21,7 @@ $(document).ready(function(){
         clearInterval(glitchInterval);
         canvas.width = w = window.innerWidth;
         offset = w * .1;
-        canvas.height = h = ~~(824 * ((w - (offset * 2)) / img.width)); ;
+        canvas.height = h = ~~(824 * (w / img.width));
         glitchInterval = setInterval(function() {
             clear();
             context.drawImage(img, 0, 0, img.width, 824, 0, 0, w, h);
