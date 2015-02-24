@@ -48,8 +48,8 @@ canvas {
 }
 
 body{
-    background: url("../images/back2.jpg") repeat;
-    background-size: 1280px;
+    background: url("../images/back2.jpg") repeat-y;
+    background-size: 100%;
     background-position: center top;
 }
 
