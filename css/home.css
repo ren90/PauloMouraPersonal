@@ -154,6 +154,7 @@ body{
 #footer{
     height: 250px;
     background-color: rgb(235, 49, 78);
+    margin-top: 20%
 }
 
 .levelBar{
@@ -213,6 +214,8 @@ body{
     animation: 5s linear 0s normal none infinite running spin;
     -moz-animation: 5s linear 0s normal none infinite running spin;
     -webkit-animation: 5s linear 0s normal none infinite running spin;
+    -ms-animation: 5s linear 0s normal none infinite running spin;
+    -o-animation: 5s linear 0s normal none infinite running spin;
 }
 
 #circleIn{
@@ -232,6 +235,8 @@ body{
     animation: 3s linear 0s normal none infinite running spinoff;
     -moz-animation: 3s linear 0s normal none infinite running spinoff;
     -webkit-animation: 3s linear 0s normal none infinite running spinoff;
+    -ms-animation: 3s linear 0s normal none infinite running spinoff;
+    -o-animation: 3s linear 0s normal none infinite running spinoff;
 }
 
 #circleRed{
@@ -246,6 +251,8 @@ body{
     animation: 5s linear 0s normal none infinite running spin;
     -moz-animation: 5s linear 0s normal none infinite running spin;
     -webkit-animation: 5s linear 0s normal none infinite running spin;
+    -ms-animation: 5s linear 0s normal none infinite running spin;
+    -o-animation: 5s linear 0s normal none infinite running spin;
 }
 
 #InfographySection{
@@ -383,31 +390,19 @@ body{
 }
 
 @-moz-keyframes spinoff {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
+    0% {-moz-transform: rotate(0deg);}
 
-    100% {
-        -moz-transform: rotate(-360deg);
-    };
+    100% {-moz-transform: rotate(-360deg);};
 }
 
 @-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
+    0% {-webkit-transform: rotate(0deg);}
 
-    100% {
-        -webkit-transform: rotate(360deg);
-    };
+    100% {-webkit-transform: rotate(360deg);};
 }
 
 @-webkit-keyframes spinoff {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
+    0% {-webkit-transform: rotate(0deg);}
 
-    100% {
-        -webkit-transform: rotate(-360deg);
-    };
+    100% {-webkit-transform: rotate(-360deg);};
 }
