@@ -211,10 +211,13 @@ body{
     margin: 0px auto;
     position: relative;
     animation: 5s linear 0s normal none infinite running spin;
+    -moz-animation: 5s linear 0s normal none infinite running spin;
+    -webkit-animation: 5s linear 0s normal none infinite running spin;
 }
 
 #circleIn{
-    top: -245px;
+    left: 0%;
+    top: 5%;
     background-color: transparent;
     border-right: 5px solid rgba(0, 183, 229, 0.9);
     border-width: 1px;
@@ -226,23 +229,26 @@ body{
     height: 230px;
     margin: 0px auto;
     position: relative;
-    animation: 10s linear 0s normal none infinite running spinoff;
+    animation: 3s linear 0s normal none infinite running spinoff;
+    -moz-animation: 3s linear 0s normal none infinite running spinoff;
+    -webkit-animation: 3s linear 0s normal none infinite running spinoff;
 }
 
 #circleRed{
+    top: 4%;
+    left: 4%;
     background-size: 210px;
-    left: 42px;
-    top: -465px;
     position: relative;
     width: 210px;
     height: 210px;
     background-repeat: no-repeat;
     background-image: url(../images/infographic_red.png);
-    animation: 15s linear 0s normal none infinite running spin;
+    animation: 5s linear 0s normal none infinite running spin;
+    -moz-animation: 5s linear 0s normal none infinite running spin;
+    -webkit-animation: 5s linear 0s normal none infinite running spin;
 }
 
 #InfographySection{
-    height: 450px;
     margin-top: 10%;
 }
 
