@@ -80,9 +80,12 @@ body{
     width: 600px;
 }
 
+#footerContainer {
+    width: 960px;
+
+}
+
 .detailsBlock {
-    position: relative;
-    float: left;
     margin: 15px 0px 15px 35px;
     width: 260px;
     height: 410px;
@@ -308,19 +311,16 @@ body{
 .footerForm #messageField{
     background-color: transparent;
     border: 0px solid;
-    width: 200px;
+    width: 75%;
     color: #CCC;
     margin-left: 5px;
     resize: none;
 }
 
-.footerForm label{
-    height: 15px;
-}
 
 .FieldSection{
     border-bottom: 1px solid #000;
-    margin: 10px 0px;
+    margin: 4% 0px;
     color: #000;
 }
 
