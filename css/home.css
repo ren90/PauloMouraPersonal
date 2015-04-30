@@ -14,7 +14,12 @@ html {
     -webkit-font-smoothing: antialiased;
     font-size: 14px;
 }
-  
+
+html, body
+{
+    height: 100%;
+}
+
 canvas {
     position: absolute;
     top: 0px;
@@ -119,11 +124,17 @@ body{
 
 .infographycText {
     text-transform: uppercase;
-    margin-top: 60px;
     font-family: DINCondensedBold;
     font-size: 1.125rem;
     color: #fff;
+    margin-top: 20%;
 }
+
+#firstInfographyc {
+    margin-left: 26%;
+}
+
+
 
 .detailsDescription {
     font-family: DINRegularAlternate;
@@ -180,23 +191,16 @@ body{
     margin-top: 10%;
 }
 
-#ps {
-    height: 185px;
-}
-
 #ai {
-    height: 135px;
-    margin-top: 50px;
+    margin-top: 24%;
 }
 
 #id {
-    height: 70px;
-    margin-top: 115px;
+    margin-top: 55%; 
 }
 
 #fl {
-    height: 160;
-    margin-top: 25px;
+    margin-top: 11%; 
 }
 
 #circleOut{
@@ -207,8 +211,8 @@ body{
     border-color: #fff transparent transparent #fff;
     border-image: none;
     border-radius: 130px;
-    width: 260px;
-    height: 260px;
+    width: 80%;
+    height: 80%;
     margin: 0px auto;
     position: relative;
     animation: 5s linear 0s normal none infinite running spin;
@@ -227,9 +231,9 @@ body{
     border-style: solid;
     border-color: #fff transparent #fff transparent;
     border-image: none;
-    border-radius: 115px;
-    width: 230px;
-    height: 230px;
+    border-radius: 100%;
+    width: 89%;
+    height: 89%;
     margin: 0px auto;
     position: relative;
     animation: 3s linear 0s normal none infinite running spinoff;
@@ -242,10 +246,10 @@ body{
 #circleRed{
     top: 4%;
     left: 4%;
-    background-size: 210px;
+    background-size: 100%;
     position: relative;
-    width: 210px;
-    height: 210px;
+    width: 92%;
+    height: 92%;
     background-repeat: no-repeat;
     background-image: url(../images/infographic_red.png);
     animation: 5s linear 0s normal none infinite running spin;
@@ -259,14 +263,7 @@ body{
     margin-top: 10%;
 }
 
-#TeamPlayer, 
-#PixelPerfection, 
-#HighlyMotivated, 
-#FastLearner{
-    margin-left: 75px;
-    margin-bottom: 5px;
-    Width: 50px;
-}
+
 
 .footerTitle{
     font-family: DINCondensedBold;
