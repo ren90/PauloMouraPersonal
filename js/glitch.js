@@ -19,15 +19,23 @@ $(document).ready(function(){
 
     var init = function() {
         clearInterval(glitchInterval);
-        canvas.width = w = computeCanvaswidth();
+        canvas.width = w = window.innerWidth;
         offset = w * .1;
-        canvas.height = h = ~~(824 * (w / img.width));
+        canvas.height = h = computeHeight();
         glitchInterval = setInterval(function() {
             clear();
-            context.drawImage(img, 0, 0, img.width, 824, -computeOffsetX(), 0, w, h);
+            context.drawImage(img, computeOffsetX(), 0, computeImageWidth(), 824, 0, 0, w, h);
             setTimeout(glitchImg, randInt(250, 1000));
-        }, 500);
+        }, 100);
     };
+
+    var computeHeight = function(){
+
+        if(window.innerWidth >= img.width){
+             return ~~(824 * (w / img.width));
+        }
+        return 824;
+    }
 
     var clear = function() {
         context.rect(0, 0, w, h);
@@ -49,9 +57,10 @@ $(document).ready(function(){
         return ~~(Math.random() * (b - a) + a);
     };
 
-    var computeCanvaswidth = function() {
+    var computeImageWidth = function() {
 
-        return Math.max(img.width, window.innerWidth);
+
+        return Math.min(img.width, window.innerWidth);
 
     };
 
@@ -60,7 +69,7 @@ $(document).ready(function(){
         if(window.innerWidth >= img.width){
             return 0;
         }else{
-            return img.width - window.innerWidth - ((img.width - window.innerWidth)/2) 
+            return img.width - window.innerWidth - ((img.width - window.innerWidth)/2) ;
         }
 
 
